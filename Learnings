@@ -1,0 +1,106 @@
+Some Common Graphs and graph’s statistics that you must learn to make your Data Science journey easy
+Image for post
+Img Ref : Imgflip
+Topics Covered in this Blog:
+Descriptive Graph’s Statistics: Normal Distribution, Central Tendency, Measures of Variability, Standard Deviation and Variance, Modality, Skewness
+Common Graphs
+Descriptive Statistics for Graphs:
+Normal Distribution
+The normal distribution is one of the most important concepts in statistics since nearly all statistical tests require normally distributed data. It basically describes how large samples of data look like when they are plotted. It is sometimes called the “bell curve“ or the “Gaussian curve“.
+Inferential statistics and the calculation of probabilities require that a normal distribution is given. This basically means, that if your data is not normally distributed, you need to be very careful what statistical tests you apply to it since they could lead to wrong conclusions.
+In a perfect normal distribution, each side is an exact mirror of the other. It should look like the distribution on the picture below:
+Image for post
+Perfect Normal Distribution
+Unimodal means that there is only one peak.
+Central Tendency
+In statistics, mean, mode, and median are called the Central Tendency. These are just three different kinds of averages and certainly the most popular ones.
+The mean is simply the average is computed by the sum of all values, divided by the number of values.
+The mode is the value or category that occurs most often within the data. It is possible that a dataset has more than one mode
+The median is the “middle” value or midpoint in data and is also called the 50th percentile.
+Note: Median is much less affected by outliers and skewed data than the mean.
+In a perfectly normal distribution, these measures all fall at the same midline point. This means that the mean, mode, and median are all equal.
+Measures of Variability
+The most popular variability measures are the range, interquartile range (IQR), variance, and standard deviation. All of these are used to measure the amount of spread or variability within your data.
+The range describes the difference between the largest and the smallest points in your data.
+The interquartile range (IQR) is a measure of statistical dispersion between upper (75th) and lower (25th) quartiles.
+Image for post
+While the range measures where the beginning and end of your datapoint are, the interquartile range is a measure of where the majority of the values lie.
+Variance and Standard Deviation
+The Standard Deviation and the Variance also measure, like the Range and IQR, how to spread apart our data is (e.g the dispersion). Therefore they are both derived from the mean.
+The variance is computed by finding the difference between every data point and the mean, squaring them, summing them up, and then taking the average of those numbers.
+Image for post
+Variance Formula
+The squares are used during the calculation because they weigh outliers(observations that lie at abnormal distances) more heavily than points that are near the mean. This prevents that differences above the mean neutralize those below the mean.
+The problem with Variance is that because of the squaring, it is not in the same unit of measurement as the original data.
+This is why the Standard Deviation is used more often because it is in the original unit. It is simply the square root of the variance and because of that, it is returned to the original unit of measurement.
+Image for post
+Standard deviation Formula
+Modality
+The modality of a distribution is determined by the number of peaks it contains. Most distributions have only one peak but it is possible that you encounter distributions with two, three or more peaks.
+The picture below shows visual examples of the three types of modality:
+Image for post
+Unimodal means that the distribution has only one peak, which means it has only one frequently occurring score, clustered at the top. A bimodal distribution has two values that occur frequently (two peaks) and a multimodal has two or several frequently occurring values.
+Skewness
+Skewness is a measurement of the symmetry of a distribution.
+It describes how much a distribution differs from a normal distribution, either to the left or to the right. The skewness value can be either positive, negative, or zero. Note that a perfect normal distribution would have a skewness of zero because the mean equals the median.
+Below you can see an illustration of the different types of skewness:
+Image for postImage for post
+We speak of a positives skew if the data is piled up to the left, which leaves the tail pointing to the right.
+A negative skew occurs if the data is piled up to the right, which leaves the tail pointing to the left. Note that positive skews are more frequent than negative ones.
+A good measurement for the skewness of a distribution is Pearson’s skewness coefficient that provides a quick estimation of the symmetry of a distribution. To compute the skewness in pandas you can just use the skew() function.
+Kurtosis
+Kurtosis measures whether your dataset is heavy-tailed or light-tailed compared to a normal distribution.
+Data sets with high kurtosis have heavy tails and more outliers.
+Data sets with low kurtosis tend to have light tails and fewer outliers.
+Note: A histogram is an effective way to show both the skewness and kurtosis of a data set because you can easily spot if something is wrong with your data. A probability plot is also a great tool because a normal distribution would just follow the straight line.
+You can see both for a positively skewed dataset in the image below:
+Image for postImage for post
+Image Ref: Niklas Donges, Towards DataScience
+A good way to mathematically measure the kurtosis of distribution is fishers’ measurement of kurtosis.
+Now we will discuss the three most common types of kurtosis.
+A normal distribution is called mesokurtic, kurtosis= zero.
+2. A platykurtic distribution has negative kurtosis and tails are very thin compared to the normal distribution.
+3. Leptokurtic distributions have kurtosis greater than 3 and it has a relatively small standard deviation.
+If you already recognized that distribution is skewed, you don’t need to calculate its kurtosis, since the distribution is already not normal. In pandas, you can view the kurtosis simply by calling the kurtosis() function.
+COMMON GRAPHS
+Since the time I started my data-science journey, there have been times when I keep fighting my memory for remembering even basic graphs!
+Here I mention some basic graphs, memorizing which, I feel will make your data-science journey easy.
+Image for postImage for post
+y = log x
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+Image for postImage for post
+SIGMOID FUNCTION : 1/1+ e^(-z)
+References :
+https://towardsdatascience.com/intro-to-descriptive-statistics-252e9c464ac9
+https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.skew.html
+WRITTEN BY
+
+Shelvi Garg
+Interests and learnings : Not limited https://www.linkedin.com/in/shelvi-garg-3a7421108/
+
+
